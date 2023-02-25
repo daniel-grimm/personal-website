@@ -1,21 +1,24 @@
 import React from 'react';
+import { Body, Header } from './Card.style';
 
-export type MainLayoutProps = {
-  children: React.ReactNode;
+export type CardProps = {
+    header?: string
+    body?: string
 };
 
-export const Card: React.FC<MainLayoutProps> = ({ children }) => {
+export const Card: React.FC<CardProps> = ({ header, body }) => {
 
-  return (
-    <div>
-      <div>
-        Daniel Grimm
-      </div>
-      <main>
-        {children}
-      </main>
-    </div>
-  );
+    return (
+        <>
+            <Header>
+                {header}
+            </Header>
+            <Body>
+                {body}
+            </Body>
+        </>
+
+    );
 }
 
 export default Card;
