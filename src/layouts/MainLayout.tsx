@@ -9,7 +9,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div>
       <div>
-        Daniel Grimm
+        Layout?
       </div>
       <main>
         {children}

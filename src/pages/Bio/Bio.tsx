@@ -1,16 +1,13 @@
 import React from 'react';
+import MainLayout from '../../layouts/MainLayout';
 
 export const Bio: React.FC = () => {
 
-  return (
-    <div>
-      <div>
-        Bio Page
-      </div>
-      <main>
-      </main>
-    </div>
-  );
+    return (
+        <MainLayout>
+            Bio Page
+        </MainLayout>
+    );
 }
 
 export default Bio;

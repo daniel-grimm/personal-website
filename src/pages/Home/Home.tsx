@@ -1,17 +1,12 @@
 import React from 'react';
-
-
+import MainLayout from '../../layouts/MainLayout';
 
 export const Home: React.FC = () => {
 
   return (
-    <div>
-      <div>
-        Home Page
-      </div>
-      <main>
-      </main>
-    </div>
+    <MainLayout>
+      Home Page
+    </MainLayout>
   );
 }
 
