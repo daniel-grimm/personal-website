@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const SideBar = styled.button`
-  display: flex;
-  color: grey;
-`;
+export const Flex = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
