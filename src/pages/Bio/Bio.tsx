@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
+import { Flex } from '../../components/Flex/Flex.style';
 import MainLayout from '../../layouts/MainLayout';
 
 export const Bio: React.FC = () => {
@@ -8,7 +9,9 @@ export const Bio: React.FC = () => {
 
     return (
         <MainLayout>
-            <Card header='Daniel Grimm Bio' body={description} />
+            <Flex flexDirection='column'>
+                <Card header='Daniel Grimm Bio' body={description} />
+            </Flex>
         </MainLayout>
     );
 }

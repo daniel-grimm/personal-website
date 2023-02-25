@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar/Sidebar';
 import { useMediaQuery } from 'react-responsive';
 import Topbar from '../components/Topbar/Topbar';
-import { Flex } from './MainLayout.style';
+import { Flex } from '../components/Flex/Flex.style';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
