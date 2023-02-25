@@ -1,5 +1,5 @@
 import React from 'react';
-import { Body, Header } from './Card.style';
+import { Body, Box, Header } from './Card.style';
 
 export type CardProps = {
     header?: string
@@ -9,14 +9,14 @@ export type CardProps = {
 export const Card: React.FC<CardProps> = ({ header, body }) => {
 
     return (
-        <>
+        <Box>
             <Header>
                 {header}
             </Header>
             <Body>
                 {body}
             </Body>
-        </>
+        </Box>
 
     );
 }
