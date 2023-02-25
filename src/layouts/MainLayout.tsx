@@ -9,21 +9,26 @@ export type MainLayoutProps = {
 };
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
-  const isDesktopOrLaptop = useMediaQuery({
+  const desktopLayout = useMediaQuery({
     query: '(min-width: 1224px)'
   })
 
-  console.log('isDesktop?', isDesktopOrLaptop)
-
   return (
     <>
-      <Flex>
-        {isDesktopOrLaptop ? <Sidebar /> : <Topbar />}
-        {children}
-      </Flex>
+      {/* Desktop layout */}
+      {desktopLayout &&
+        <Flex flexDirection='row'>
+          <Sidebar />
+          {children}
+        </Flex>}
 
+      {/* Mobile layout */}
+      {!desktopLayout &&
+        <Flex flexDirection='column'>
+          <Topbar />
+          {children}
+        </Flex>}
     </>
-
   );
 }
 
