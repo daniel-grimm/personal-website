@@ -17,9 +17,10 @@ export const ListItem = styled.div`
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: ${theme.serifFontFamily};
+  gap: 0.8rem;
 
   &:hover {
     background-color: ${theme.emerald200};
-    color: ${theme.black};
+    color: ${theme.emerald10};
   }
 `

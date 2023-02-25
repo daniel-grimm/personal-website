@@ -10,5 +10,10 @@ export const Bar = styled.div`
 `;
 
 export const IconWrapper = styled.div`
+  color: ${theme.gray130};
   margin-top: 0.75rem;
+
+  &:hover {
+    color: ${theme.emerald10};
+  }
 `;

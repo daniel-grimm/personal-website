@@ -9,16 +9,16 @@ export const Topbar: React.FC = () => {
     return (
         <Bar>
             <IconWrapper>
-                <FaHouseUser color={theme.emerald200.toString()} size='1.5rem' />
+                <FaHouseUser size='1.5rem' />
             </IconWrapper>
             <IconWrapper>
-                <FaScroll color={theme.emerald200.toString()} size='1.5rem' />
+                <FaScroll size='1.5rem' />
             </IconWrapper>
             <IconWrapper>
-                <FaTools color={theme.emerald200.toString()} size='1.5rem' />
+                <FaTools size='1.5rem' />
             </IconWrapper>
             <IconWrapper>
-                <BsFillPeopleFill color={theme.emerald200.toString()} size='1.5rem' />
+                <BsFillPeopleFill size='1.5rem' />
             </IconWrapper>
         </Bar>
     );
