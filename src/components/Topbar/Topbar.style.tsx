@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
 
-export const Box = styled.div`
+export const Bar = styled.div`
   display: flex;
+  flex-direction: row;
+  background-color: ${theme.emerald50};
+  min-height: 3rem;
+  justify-content: space-around;
 `;
 
-export const Header = styled.h1`
-  display: flex;
-  font-weight: ${theme.heavyFontWeight};
-  font-family: ${theme.sansSerifFontFamily};
-`;
-
-export const Body = styled.div`
-  display: flex;
+export const IconWrapper = styled.div`
+  margin-top: 0.75rem;
 `;

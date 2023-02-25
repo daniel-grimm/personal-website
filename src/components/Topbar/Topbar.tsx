@@ -1,23 +1,26 @@
 import React from 'react';
-import { Body, Header } from './Topbar.style';
+import { Bar, IconWrapper } from './Topbar.style';
+import { FaHouseUser, FaScroll, FaTools } from 'react-icons/fa';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { theme } from '../../theme';
 
-export type CardProps = {
-    header?: string
-    body?: string
-};
-
-export const Topbar: React.FC<CardProps> = ({ header, body }) => {
+export const Topbar: React.FC = () => {
 
     return (
-        <>
-            <Header>
-                {header}
-            </Header>
-            <Body>
-                {body}
-            </Body>
-        </>
-
+        <Bar>
+            <IconWrapper>
+                <FaHouseUser color={theme.emerald200.toString()} size='1.5rem' />
+            </IconWrapper>
+            <IconWrapper>
+                <FaScroll color={theme.emerald200.toString()} size='1.5rem' />
+            </IconWrapper>
+            <IconWrapper>
+                <FaTools color={theme.emerald200.toString()} size='1.5rem' />
+            </IconWrapper>
+            <IconWrapper>
+                <BsFillPeopleFill color={theme.emerald200.toString()} size='1.5rem' />
+            </IconWrapper>
+        </Bar>
     );
 }
 
