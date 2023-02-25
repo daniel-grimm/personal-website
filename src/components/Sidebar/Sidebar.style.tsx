@@ -13,10 +13,10 @@ export const ListItem = styled.div`
   display: flex;
   justify-content: center;
   font-size: 20px;
-  color: ${theme.white};
+  color: ${theme.gray130};
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: ${theme.serifFontFamily};
 
   &:hover {
     background-color: ${theme.emerald200};

@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import { useMediaQuery } from 'react-responsive';
 import Topbar from '../components/Topbar/Topbar';
 import { Flex } from '../components/Flex/Flex.style';
+import { Background } from './MainLayout.style';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
@@ -17,17 +18,23 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     <>
       {/* Desktop layout */}
       {desktopLayout &&
-        <Flex flexDirection='row'>
-          <Sidebar />
-          {children}
-        </Flex>}
+        <Background>
+          <Flex flexDirection='row'>
+            <Sidebar />
+            {children}
+          </Flex>
+        </Background>}
+
 
       {/* Mobile layout */}
       {!desktopLayout &&
-        <Flex flexDirection='column'>
-          <Topbar />
-          {children}
-        </Flex>}
+        <Background>
+          <Flex flexDirection='column'>
+            <Topbar />
+            {children}
+          </Flex>
+        </Background>
+      }
     </>
   );
 }

@@ -1,4 +1,11 @@
 export enum theme {
+  // Fonts
+  serifFontFamily = "Times New Roman",
+  sansSerifFontFamily = "Arial",
+  lightFontWeight = 100,
+  mediumFontWeight = 300,
+  heavyFontWeight = 600,
+
   // Greenscale
   emerald200 = "#AFF8D1",
   emerald190 = "#9AF6C5",
@@ -22,19 +29,19 @@ export enum theme {
   emerald10 = "#064322",
 
   // Grayscale
-  black = "#000000",
-  gray10 = "#121212",
-  gray20 = "#242424",
-  gray30 = "#373737",
-  gray40 = "#494949",
-  gray50 = "#5B5B5B",
-  gray60 = "#6D6D6D",
-  gray70 = "#808080",
-  gray80 = "#929292",
-  gray90 = "#A4A4A4",
-  gray100 = "#B6B6B6",
-  gray110 = "#C8C8C8",
-  gray120 = "#DBDBDB",
-  gray130 = "#EDEDED",
   white = "#FFFFFF",
+  gray130 = "#EDEDED",
+  gray120 = "#DBDBDB",
+  gray110 = "#C8C8C8",
+  gray100 = "#B6B6B6",
+  gray90 = "#A4A4A4",
+  gray80 = "#929292",
+  gray70 = "#808080",
+  gray60 = "#6D6D6D",
+  gray50 = "#5B5B5B",
+  gray40 = "#494949",
+  gray30 = "#373737",
+  gray20 = "#242424",
+  gray10 = "#121212",
+  black = "#000000",
 }
