@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const Box = styled.div`
-  border: solid 1px;
+  border: solid 2px;
   border-radius: 7px;
+  border-color: ${theme.emerald50};
   min-width: 90%;
   max-width: 90%;
   align-items: center;
   margin-left: 5%;
   margin-top: 2rem;
-  background-color: ${theme.gray120};
+  background-color: ${theme.white};
 `;
 
 export const Header = styled.h1`
