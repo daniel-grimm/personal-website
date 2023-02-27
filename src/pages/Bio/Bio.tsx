@@ -5,7 +5,7 @@ import MainLayout from '../../layouts/MainLayout';
 
 export const Bio: React.FC = () => {
 
-    const description: string = `This is Daniel Grimm's bio`
+    const description: Array<string> = [`This is Daniel Grimm's bio`]
 
     return (
         <MainLayout>
