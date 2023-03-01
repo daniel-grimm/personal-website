@@ -4,4 +4,5 @@ import { theme } from "../theme";
 export const Background = styled.div`
     background-color: ${theme.gray130};
     width: 100%;
+    min-height: 101vh;
 `;

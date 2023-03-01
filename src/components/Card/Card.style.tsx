@@ -7,7 +7,8 @@ export const Box = styled.div`
   max-width: 90%;
   align-items: center;
   margin-left: 5%;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: ${theme.white};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;

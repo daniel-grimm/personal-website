@@ -13,7 +13,7 @@ export type MainLayoutProps = {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   const desktopLayout = useMediaQuery({
-    query: '(min-width: 1224px)'
+    query: '(min-width: 920px)'
   })
 
   return (
