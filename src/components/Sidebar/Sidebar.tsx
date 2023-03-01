@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
-import { Bar, ListItem } from './Sidebar.style';
+import { Link, Bar, ListItem } from './Sidebar.style';
 import { FaHouseUser, FaTools, FaLink } from 'react-icons/fa';
 
 export const Sidebar: React.FC = () => {
@@ -9,18 +9,24 @@ export const Sidebar: React.FC = () => {
         <>
             <Bar>
                 <ProfilePicture />
-                <ListItem>
-                    <FaHouseUser />
-                    Home
-                </ListItem>
-                <ListItem>
-                    <FaTools />
-                    Projects
-                </ListItem>
-                <ListItem>
-                    <FaLink />
-                    Links
-                </ListItem>
+                <Link href='/'>
+                    <ListItem>
+                        <FaHouseUser />
+                        Home
+                    </ListItem>
+                </Link>
+                <Link href='/projects'>
+                    <ListItem>
+                        <FaTools />
+                        Projects
+                    </ListItem>
+                </Link>
+                <Link href='/links'>
+                    <ListItem>
+                        <FaLink />
+                        Links
+                    </ListItem>
+                </Link>
             </Bar>
         </>
 
