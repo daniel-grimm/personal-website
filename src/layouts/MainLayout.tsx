@@ -25,6 +25,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
             <Sidebar />
             <Offset>
               <Flex flexDirection='column'>
+                <Spacer minHeight='0.5rem' maxHeight='0.5rem' />
                 {children}
               </Flex>
             </Offset>
@@ -37,7 +38,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         <Background>
           <Flex flexDirection='column'>
             <Topbar />
-            <Spacer />
+            <Spacer minHeight='3rem' maxHeight='3rem' />
             <Flex flexDirection='column'>
               {children}
             </Flex>
