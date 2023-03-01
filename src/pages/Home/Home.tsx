@@ -8,9 +8,9 @@ export const Home: React.FC = () => {
 
   return (
     <MainLayout>
-        <Flex flexDirection='column'>
-          <Card header="About Daniel" body={<Overview />} />
-        </Flex>
+      <Flex flexDirection='column'>
+        <Card header="About Daniel" body={<Overview />} />
+      </Flex>
     </MainLayout>
   );
 }

@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import Topbar from '../components/Topbar/Topbar';
 import { Flex } from '../components/Flex/Flex.style';
 import { Background } from './MainLayout.style';
+import { Offset } from './Offset.style';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
@@ -21,7 +22,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         <Background>
           <Flex flexDirection='row'>
             <Sidebar />
-            {children}
+            <Offset>
+              {children}
+            </Offset>
           </Flex>
         </Background>}
 
