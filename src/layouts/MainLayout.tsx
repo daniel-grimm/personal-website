@@ -5,6 +5,7 @@ import Topbar from '../components/Topbar/Topbar';
 import { Flex } from '../components/Flex/Flex.style';
 import { Background } from './MainLayout.style';
 import { Offset } from './Offset.style';
+import { Spacer } from '../components/Spacer/Spacer.style';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
@@ -23,7 +24,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <Flex flexDirection='row'>
             <Sidebar />
             <Offset>
-              {children}
+              <Flex flexDirection='column'>
+                {children}
+              </Flex>
             </Offset>
           </Flex>
         </Background>}
@@ -34,7 +37,10 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         <Background>
           <Flex flexDirection='column'>
             <Topbar />
-            {children}
+            <Spacer />
+            <Flex flexDirection='column'>
+              {children}
+            </Flex>
           </Flex>
         </Background>
       }

@@ -7,6 +7,8 @@ export const Bar = styled.div`
   background-color: ${theme.emerald50};
   min-height: 3rem;
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
 `;
 
 export const IconWrapper = styled.div`
