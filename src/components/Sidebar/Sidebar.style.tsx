@@ -24,7 +24,3 @@ export const ListItem = styled.div`
     color: ${theme.emerald10};
   }
 `
-
-export const Link = styled.a`
-  text-decoration: none;
-`;

@@ -1,7 +1,8 @@
 import React from 'react';
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
-import { Link, Bar, ListItem } from './Sidebar.style';
+import { Bar, ListItem } from './Sidebar.style';
 import { FaHouseUser, FaTools, FaLink } from 'react-icons/fa';
+import { Link } from '../TextStyles/TextStyles.style';
 
 export const Sidebar: React.FC = () => {
 
