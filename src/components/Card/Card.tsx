@@ -1,9 +1,9 @@
 import React from 'react';
-import { Body, Box, Break, Header, Text } from './Card.style';
+import { Body, Box, Header } from './Card.style';
 
 export type CardProps = {
     header?: string
-    body: Array<string>
+    body: React.ReactNode
 };
 
 export const Card: React.FC<CardProps> = ({ header, body }) => {
@@ -14,16 +14,7 @@ export const Card: React.FC<CardProps> = ({ header, body }) => {
                 {header}
             </Header>
             <Body>
-                {body.map(text => {
-                    return (
-                        <>
-                            <Text>
-                                {text}
-                            </Text>
-                            <Break />
-                        </>
-                    );
-                })}
+                {body}
             </Body>
         </Box>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Bar, IconWrapper } from './Topbar.style';
-import { FaHouseUser, FaScroll, FaTools } from 'react-icons/fa';
-import { BsFillPeopleFill } from 'react-icons/bs';
+import { FaHouseUser, FaTools, FaLink } from 'react-icons/fa';
 
 export const Topbar: React.FC = () => {
 
@@ -11,13 +10,10 @@ export const Topbar: React.FC = () => {
                 <FaHouseUser size='1.5rem' />
             </IconWrapper>
             <IconWrapper>
-                <FaScroll size='1.5rem' />
-            </IconWrapper>
-            <IconWrapper>
                 <FaTools size='1.5rem' />
             </IconWrapper>
             <IconWrapper>
-                <BsFillPeopleFill size='1.5rem' />
+                <FaLink size='1.5rem' />
             </IconWrapper>
         </Bar>
     );
