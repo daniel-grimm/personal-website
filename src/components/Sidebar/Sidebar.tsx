@@ -30,7 +30,6 @@ export const Sidebar: React.FC = () => {
                 </Link>
             </Bar>
         </>
-
     );
 }
 

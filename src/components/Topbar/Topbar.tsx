@@ -22,9 +22,6 @@ export const Topbar: React.FC = () => {
                     <FaLink size='1.5rem' />
                 </IconWrapper>
             </Link>
-
-
-
         </Bar>
     );
 }

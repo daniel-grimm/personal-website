@@ -11,6 +11,7 @@ export const Box = styled.div`
   margin-left: 5%;
   margin-top: 2rem;
   background-color: ${theme.white};
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const Header = styled.h1`
