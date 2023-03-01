@@ -2,9 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const Box = styled.div`
-  border: solid 2px;
   border-radius: 7px;
-  border-color: ${theme.gray100};
   min-width: 90%;
   max-width: 90%;
   align-items: center;
@@ -15,11 +13,14 @@ export const Box = styled.div`
 `;
 
 export const Header = styled.h1`
-margin-left: 0.5rem;
+  display: flex;
+  margin-left: 0.5rem;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Body = styled.div`
-margin-left: 0.5rem;
+  margin-left: 0.5rem;
 `;
 
 export const Text = styled.p`

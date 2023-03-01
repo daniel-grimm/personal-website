@@ -10,9 +10,9 @@ export const Card: React.FC<CardProps> = ({ header, body }) => {
 
     return (
         <Box>
-            <Header>
+            {header && <Header>
                 {header}
-            </Header>
+            </Header>}
             <Body>
                 {body}
             </Body>
