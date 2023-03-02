@@ -11,7 +11,7 @@ export const SectionTitle = styled.h1`
 
 export const SectionHeader = styled.h2``;
 
-export const Link = styled.a`
+export const Link = styled.button`
   text-decoration: none;
 `;
 

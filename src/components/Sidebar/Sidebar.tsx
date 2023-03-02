@@ -4,25 +4,43 @@ import { Bar, ListItem } from './Sidebar.style';
 import { FaHouseUser, FaTools, FaLink } from 'react-icons/fa';
 import { Link } from '../TextStyles/TextStyles.style';
 
-export const Sidebar: React.FC = () => {
+export interface SidebarProps {
+    setIsHome: React.Dispatch<React.SetStateAction<boolean>>
+    setIsProjects: React.Dispatch<React.SetStateAction<boolean>>
+    setIsLinks: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const Sidebar: React.FC<SidebarProps> = ({ setIsHome, setIsProjects, setIsLinks }) => {
 
     return (
         <>
             <Bar>
                 <ProfilePicture />
-                <Link href='/'>
+                <Link onClick={() => {
+                    setIsProjects(false)
+                    setIsLinks(false)
+                    setIsHome(true)
+                }}>
                     <ListItem>
                         <FaHouseUser />
                         Home
                     </ListItem>
                 </Link>
-                <Link href='/projects'>
+                <Link onClick={() => {
+                    setIsHome(false)
+                    setIsLinks(false)
+                    setIsProjects(true)
+                }}>
                     <ListItem>
                         <FaTools />
                         Projects
                     </ListItem>
                 </Link>
-                <Link href='/links'>
+                <Link onClick={() => {
+                    setIsProjects(false)
+                    setIsHome(false)
+                    setIsLinks(true)
+                }}>
                     <ListItem>
                         <FaLink />
                         Links

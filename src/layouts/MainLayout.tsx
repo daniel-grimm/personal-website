@@ -9,9 +9,12 @@ import { Spacer } from '../components/Spacer/Spacer.style';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
+  setIsHome: React.Dispatch<React.SetStateAction<boolean>>
+  setIsProjects: React.Dispatch<React.SetStateAction<boolean>>
+  setIsLinks: React.Dispatch<React.SetStateAction<boolean>>
 };
 
-export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+export const MainLayout: React.FC<MainLayoutProps> = ({ children, setIsHome, setIsProjects, setIsLinks }) => {
   const desktopLayout: boolean = useMediaQuery({
     query: '(min-width: 920px)'
   })
@@ -22,7 +25,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       {desktopLayout &&
         <Background>
           <Flex flexDirection='row'>
-            <Sidebar />
+            <Sidebar setIsHome={setIsHome} setIsProjects={setIsProjects} setIsLinks={setIsLinks} />
             <Offset>
               <Flex flexDirection='column'>
                 <Spacer minHeight='0.5rem' maxHeight='0.5rem' />
@@ -37,7 +40,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       {!desktopLayout &&
         <Background>
           <Flex flexDirection='column'>
-            <Topbar />
+            <Topbar setIsHome={setIsHome} setIsProjects={setIsProjects} setIsLinks={setIsLinks} />
             <Spacer minHeight='3rem' maxHeight='3rem' />
             <Flex flexDirection='column'>
               {children}

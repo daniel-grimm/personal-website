@@ -5,23 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Home from "./pages/Home/Home";
-import { Links } from "./pages/Links/Links";
-import Projects from "./pages/Projects/Projects";
+import Main from "./pages/Main/Main";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Main />,
   },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-  {
-    path: "/links",
-    element: <Links />,
-  }
 ]);
 
 const root = ReactDOM.createRoot(
