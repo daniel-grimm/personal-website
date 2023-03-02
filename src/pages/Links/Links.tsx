@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from "../../components/Card/Card";
 import MainLayout from "../../layouts/MainLayout";
-import { GitHub } from "./Content/GitHub";
+import { Overview } from "./Content/Overview";
 
 export const Links: React.FC = () => {
     return (
         <MainLayout>
-            <Card body={<GitHub />} />
+            <Card header='Supplementary Links' body={<Overview />} />
         </MainLayout>
     );
 }

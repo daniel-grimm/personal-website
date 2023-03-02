@@ -3,8 +3,8 @@ import { Paragraph, SectionTitle } from "../../../components/TextStyles/TextStyl
 export const Pactera: React.FC = () => {
     return (
         <>
-            <SectionTitle>Pactera</SectionTitle>
-            <Paragraph>I currently work at Headstorm.</Paragraph>
+            <SectionTitle>Pactera | 2017</SectionTitle>
+            <Paragraph>I’ve worked on the Microsoft Windows 10 build system overseeing hundreds of builds every day, debugging, and communicating with external partners to resolve issues.</Paragraph>
         </>
 
     )

@@ -6,6 +6,9 @@ export enum theme {
   mediumFontWeight = 300,
   heavyFontWeight = 600,
 
+  // Bluescale
+  emailBlue = "#0072C6",
+
   // Greenscale
   emerald200 = "#AFF8D1",
   emerald190 = "#9AF6C5",

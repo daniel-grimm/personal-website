@@ -11,7 +11,9 @@ export const Headstorm: React.FC = () => {
             <SectionHeader>Agricultural Finance Portal</SectionHeader>
             <Paragraph>I currently work at Headstorm.</Paragraph>
             <SectionHeader>Performance Review Tool</SectionHeader>
-            <Paragraph>I currently work at Headstorm.</Paragraph>
+            <Paragraph>As part of the onboarding process I led a team of new hires to revamp our internal performance review tool written in Vue and Kotlin.</Paragraph>
+            <SectionHeader>HeadstormU</SectionHeader>
+            <Paragraph>I've also stepped into a role as HeadstormU coordinator, our employee driven presentations every Friday to educate the company about the latest technologies and tools.</Paragraph>
         </>
 
     )
