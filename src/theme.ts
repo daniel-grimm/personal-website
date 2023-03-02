@@ -8,6 +8,7 @@ export enum theme {
 
   // Bluescale
   emailBlue = "#0072C6",
+  linkedInBlue = "#0077B5",
 
   // Greenscale
   emerald200 = "#AFF8D1",

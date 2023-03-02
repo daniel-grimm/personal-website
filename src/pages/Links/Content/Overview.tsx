@@ -11,10 +11,18 @@ export const Overview: React.FC = () => {
             <Paragraph>Thanks for checking out my website! I hope you learned about my skills and background as a Software Engineer. Feel free to explore my LinkedIn, Github, or send me an email!</Paragraph>
             <IconGroup>
                 <IconLink href={githubUrl}>
-                    <FaGithub />
+                    <IconContext.Provider
+                        value={{ color: theme.black.toString() }}
+                    >
+                        <FaGithub />
+                    </IconContext.Provider>
                 </IconLink>
                 <IconLink href={linkedinUrl}>
-                    <FaLinkedin />
+                    <IconContext.Provider
+                        value={{ color: theme.linkedInBlue.toString() }}
+                    >
+                        <FaLinkedin />
+                    </IconContext.Provider>
                 </IconLink>
                 <IconLink href={emailUrl}>
                     <IconContext.Provider
