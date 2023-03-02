@@ -7,3 +7,7 @@ export const ImageGallery = styled.div`
     padding-bottom: 1rem;
     flex-wrap: wrap;
 `;
+
+export const MobileImage = styled.div`
+    padding-top: 1rem;
+`;

@@ -14,7 +14,7 @@ import sql from '../../../assets/images/sql.png';
 import terraform from '../../../assets/images/terraform.png';
 import vue from '../../../assets/images/vue.png';
 import { Image } from '../../../components/Image/Image.style';
-import { ImageGallery } from '../../../components/ImageGallery/ImageGallery';
+import { ImageGallery, MobileImage } from '../../../components/ImageGallery/ImageGallery';
 
 export const Gallery: React.FC = () => {
     const desktopLayout: boolean = useMediaQuery({
@@ -48,14 +48,30 @@ export const Gallery: React.FC = () => {
             {!desktopLayout && (
                 <>
                     <ImageGallery>
-                        <Image src={react} width='90px' height='80px' />
-                        <Image src={csharp} width='70px' height='80px' />
-                        <Image src={dotnet} width='80px' height='80px' />
-                        <Image src={sql} width='80px' height='80px' />
-                        <Image src={github} width='80px' height='80px' />
-                        <Image src={angular} width='80px' height='80px' />
-                        <Image src={azure} width='100px' height='80px' />
-                        <Image src={aws} width='120px' height='80px' />
+                        <MobileImage>
+                            <Image src={react} width='90px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={csharp} width='70px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={dotnet} width='80px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={sql} width='80px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={github} width='80px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={angular} width='80px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={azure} width='100px' height='80px' />
+                        </MobileImage>
+                        <MobileImage>
+                            <Image src={aws} width='120px' height='80px' />
+                        </MobileImage>
                     </ImageGallery>
                 </>
             )}
