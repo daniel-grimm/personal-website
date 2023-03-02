@@ -9,3 +9,5 @@ export const GitHub: React.FC = () => {
         </>
     )
 }
+
+export default GitHub;
