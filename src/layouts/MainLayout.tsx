@@ -1,11 +1,11 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar/Sidebar';
-import { useMediaQuery } from 'react-responsive';
 import Topbar from '../components/Topbar/Topbar';
 import { Flex } from '../components/Flex/Flex.style';
 import { Background } from './MainLayout.style';
 import { Offset } from './Offset.style';
 import { Spacer } from '../components/Spacer/Spacer.style';
+import { useIsMobileView } from '../hooks/useIsMobileView';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
@@ -15,9 +15,7 @@ export type MainLayoutProps = {
 };
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children, setIsHome, setIsProjects, setIsLinks }) => {
-  const desktopLayout: boolean = useMediaQuery({
-    query: '(min-width: 920px)'
-  })
+  const desktopLayout: boolean = useIsMobileView();
 
   return (
     <>

@@ -1,4 +1,3 @@
-import { useMediaQuery } from 'react-responsive';
 import ado from '../../../assets/images/ado.png';
 import angular from '../../../assets/images/angular.png';
 import aws from '../../../assets/images/aws.png';
@@ -14,27 +13,26 @@ import sql from '../../../assets/images/sql.png';
 import terraform from '../../../assets/images/terraform.png';
 import vue from '../../../assets/images/vue.png';
 import { Image } from '../../../components/Image/Image.style';
-import { ImageGallery, MobileImage } from '../../../components/ImageGallery/ImageGallery';
+import { ImageGallery } from '../../../components/ImageGallery/ImageGallery';
+import { useIsMobileView } from '../../../hooks/useIsMobileView';
 
 export const Gallery: React.FC = () => {
-    const desktopLayout: boolean = useMediaQuery({
-        query: '(min-width: 920px)'
-    })
+    const isDesktopView = useIsMobileView();
 
     return (
         <>
-            {desktopLayout && (
+            <ImageGallery>
+                <Image src={react} width='90px' height='80px' />
+                <Image src={csharp} width='70px' height='80px' />
+                <Image src={dotnet} width='80px' height='80px' />
+                <Image src={sql} width='80px' height='80px' />
+                <Image src={github} width='80px' height='80px' />
+                <Image src={angular} width='80px' height='80px' />
+                <Image src={azure} width='100px' height='80px' />
+                <Image src={aws} width='120px' height='80px' />
+            </ImageGallery>
+            {isDesktopView && (
                 <>
-                    <ImageGallery>
-                        <Image src={react} width='90px' height='80px' />
-                        <Image src={csharp} width='70px' height='80px' />
-                        <Image src={dotnet} width='80px' height='80px' />
-                        <Image src={sql} width='80px' height='80px' />
-                        <Image src={github} width='80px' height='80px' />
-                        <Image src={angular} width='80px' height='80px' />
-                        <Image src={azure} width='100px' height='80px' />
-                        <Image src={aws} width='120px' height='80px' />
-                    </ImageGallery>
                     <ImageGallery>
                         <Image src={jira} width='80px' height='80px' />
                         <Image src={terraform} width='80px' height='80px' />
@@ -42,36 +40,6 @@ export const Gallery: React.FC = () => {
                         <Image src={vue} width='80px' height='80px' />
                         <Image src={redhat} width='90px' height='80px' />
                         <Image src={ado} width='80px' height='80px' />
-                    </ImageGallery>
-                </>
-            )}
-            {!desktopLayout && (
-                <>
-                    <ImageGallery>
-                        <MobileImage>
-                            <Image src={react} width='90px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={csharp} width='70px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={dotnet} width='80px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={sql} width='80px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={github} width='80px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={angular} width='80px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={azure} width='100px' height='80px' />
-                        </MobileImage>
-                        <MobileImage>
-                            <Image src={aws} width='120px' height='80px' />
-                        </MobileImage>
                     </ImageGallery>
                 </>
             )}
