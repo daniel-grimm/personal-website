@@ -2,15 +2,19 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 export const Paragraph = styled.p`
+  font-family: ${theme.sansSerifFontFamily};
   padding-right: 0.5rem;
 `;
 
 export const SectionTitle = styled.h1`
+  font-family: ${theme.sansSerifFontFamily};
   display: flex;
   justify-content: center;
 `;
 
-export const SectionHeader = styled.h2``;
+export const SectionHeader = styled.h2`
+  font-family: ${theme.sansSerifFontFamily};
+`;
 
 export const SidebarButton = styled.button<{
   height: string;

@@ -1,7 +1,7 @@
 export enum theme {
   // Fonts
-  serifFontFamily = "Times New Roman",
-  sansSerifFontFamily = "Arial",
+  sansSerifFontFamily = "Inter",
+  serifFontFamily = "Roboto Slab",
   lightFontWeight = 100,
   mediumFontWeight = 300,
   heavyFontWeight = 600,

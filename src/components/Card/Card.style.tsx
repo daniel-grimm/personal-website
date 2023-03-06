@@ -14,6 +14,7 @@ export const Box = styled.div`
 `;
 
 export const Header = styled.h1`
+  font-family: ${theme.sansSerifFontFamily};
   display: flex;
   margin-left: 0.5rem;
   justify-content: center;
@@ -23,8 +24,3 @@ export const Header = styled.h1`
 export const Body = styled.div`
   margin-left: 0.5rem;
 `;
-
-export const Text = styled.p`
-`;
-
-export const Break = styled.div``;
