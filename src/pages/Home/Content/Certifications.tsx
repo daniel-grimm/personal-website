@@ -4,10 +4,8 @@ import azureDataFundamentals from "../../../assets/images/azuredatafundamentals.
 import awsFundamentals from "../../../assets/images/awscloudpractitioner.png";
 import azureAdmin from "../../../assets/images/azureadministratorassociate.png";
 import { Image } from '../../../components/Image/Image.style';
-import { useIsMobileView } from "../../../hooks/useIsMobileView";
 
 export const Certifications: React.FC = () => {
-    const desktopLayout: boolean = useIsMobileView();
 
     return (
         <>
