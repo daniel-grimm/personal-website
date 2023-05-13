@@ -9,6 +9,7 @@ export const Main: React.FC = () => {
     const [isProjects, setIsProjects] = useState(false);
     const [isLinks, setIsLinks] = useState(false);
 
+    // Show the page depending on which flag is set
     return (
         <>
             {isHome && (

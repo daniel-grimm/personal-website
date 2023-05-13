@@ -4,8 +4,10 @@ export const Headstorm: React.FC = () => {
     return (
         <>
             <SectionTitle>Headstorm | 2021 - Current</SectionTitle>
+            <SectionHeader>Azure Functions Migration</SectionHeader>
+            <Paragraph>Currently I'm working on creating C# Azure Functions for a shipping company to process and export XML files.</Paragraph>
             <SectionHeader>Staffing Tool</SectionHeader>
-            <Paragraph>Currently I'm working on creating a staffing web portal written in React, Express, Sequelize, and hosted on AWS. I've been able to jump in quickly, assisting with bugfixes and revamping our routes organization and usage.</Paragraph>
+            <Paragraph>During the winter of 2023 I worked on creating a staffing web portal written in React, Express, Sequelize, and hosted on AWS. I've been able to jump in quickly, assisting with bugfixes and revamping our routes organization and usage.</Paragraph>
             <Paragraph>This has also been a place for to grow in my knowledge of Azure which has allowed me to pass the Azure Administrator AZ-104 exam.</Paragraph>
             <SectionHeader>Pest Monitoring Portal</SectionHeader>
             <Paragraph>This was a fast-paced three month project written in Next.JS, and utilized an existing Django backend.</Paragraph>
