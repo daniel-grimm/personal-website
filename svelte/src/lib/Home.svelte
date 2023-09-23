@@ -16,4 +16,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    h1 {
+        font-family: 'Dosis', sans-serif;
+    }
+
+    p {
+        font-family: 'Dosis', sans-serif;
+    }
 </style>

@@ -24,17 +24,13 @@
     div {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 1.3rem;
     }
 
     svg {
         height: 2rem;
-        transition: height 0.3s;
         fill: lightgray;
-    }
-
-    svg:hover {
-        height: 2.5rem;
+        transition: fill 0.3s;
     }
 
     .github:hover {
