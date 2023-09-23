@@ -1,17 +1,28 @@
 <script lang="ts">
-  import Experience from './lib/Experience.svelte';
-  import Home from './lib/Home.svelte';
-  import Links from './lib/Links.svelte';
-  import Navigation from './lib/Navigation.svelte';
-  import { isExperience, isHome } from './store/pageStore';
+  import Projects from "./lib/Projects.svelte";
+  import Home from "./lib/Home.svelte";
+  import Links from "./lib/Links.svelte";
+  import Navigation from "./lib/Navigation.svelte";
+  import { isProjects, isHome, isCertifications, isSkills } from "./store/pageStore";
+  import Certifications from "./lib/Certifications.svelte";
+  import Skills from "./lib/Skills.svelte";
 </script>
+
 <main>
   {#if $isHome}
     <Home />
   {/if}
 
-  {#if $isExperience}
-    <Experience />
+  {#if $isProjects}
+    <Projects />
+  {/if}
+
+  {#if $isCertifications}
+    <Certifications />
+  {/if}
+
+  {#if $isSkills}
+    <Skills />
   {/if}
 
   <Navigation />
@@ -23,5 +34,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: radial-gradient(circle closest-side, #5a5a5a, #242424);
   }
 </style>

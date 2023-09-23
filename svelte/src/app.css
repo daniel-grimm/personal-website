@@ -14,6 +14,34 @@
   -webkit-text-size-adjust: 100%;
 }
 
+div {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+}
+
+li {
+  font-family: 'Dosis', sans-serif;
+}
+
+button {
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
