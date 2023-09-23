@@ -1,16 +1,9 @@
 <script lang="ts">
   import Counter from './lib/Counter.svelte';
-import Experience from './lib/Experience.svelte';
-  import { writable, type Writable } from 'svelte/store';
-
-  const isHome: Writable<boolean> = writable(true);
-  const isExperience: Writable<boolean> = writable(false);
-
-  function toggle() {
-    isHome.set(!$isHome);
-    isExperience.set(!$isExperience);
-    console.log($isHome, $isExperience);
-  }
+  import Experience from './lib/Experience.svelte';
+  import { isExperience, isHome } from './store/pageStore';
+  import { EXPERIENCE } from './utils/pageConstants';
+  import { togglePage } from './utils/togglePage';
 </script>
 
 <main>
@@ -22,5 +15,5 @@ import Experience from './lib/Experience.svelte';
     <Counter />
   {/if}
 
-  <button on:click={toggle}>Toggle</button>
+  <button on:click={() => togglePage(EXPERIENCE)}>Toggle</button>
 </main>
