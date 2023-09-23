@@ -1,5 +1,10 @@
 <script>
-  import { CERTIFICATIONS, HOME, PROJECTS, SKILLS } from "../utils/pageConstants";
+  import {
+    CERTIFICATIONS,
+    HOME,
+    PROJECTS,
+    SKILLS,
+  } from "../utils/pageConstants";
   import { togglePage } from "../utils/togglePage";
 </script>
 
@@ -11,6 +16,12 @@
 </div>
 
 <style>
+  div {
+    position: sticky;
+    top: 0;
+    background-color: rgba(36, 36, 36, 0.9);
+  }
+
   button {
     background: rgba(36, 36, 36, 0.3);
     border: none;

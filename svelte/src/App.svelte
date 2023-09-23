@@ -9,6 +9,8 @@
 </script>
 
 <main>
+  <Navigation />
+
   {#if $isHome}
     <Home />
   {/if}
@@ -25,7 +27,6 @@
     <Skills />
   {/if}
 
-  <Navigation />
   <Links />
 </main>
 
@@ -35,6 +36,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle closest-side, #5a5a5a, #242424);
   }
 </style>
