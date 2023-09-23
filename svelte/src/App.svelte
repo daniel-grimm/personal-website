@@ -1,22 +1,20 @@
 <script lang="ts">
-  import Counter from './lib/Counter.svelte';
   import Experience from './lib/Experience.svelte';
+  import Home from './lib/Home.svelte';
   import Links from './lib/Links.svelte';
+  import Navigation from './lib/Navigation.svelte';
   import { isExperience, isHome } from './store/pageStore';
-  import { EXPERIENCE } from './utils/pageConstants';
-  import { togglePage } from './utils/togglePage';
 </script>
 <main>
   {#if $isHome}
-    <Experience />
+    <Home />
   {/if}
 
   {#if $isExperience}
-    <Counter />
+    <Experience />
   {/if}
 
-  <button on:click={() => togglePage(EXPERIENCE)}>Toggle</button>
-
+  <Navigation />
   <Links />
 </main>
 

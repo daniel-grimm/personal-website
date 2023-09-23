@@ -1,3 +1,0 @@
-<div>
-  Counter Page
-</div>
