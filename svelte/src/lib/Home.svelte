@@ -1,3 +1,9 @@
+<script lang="ts">
+  import profile from "../assets/daniel.jpeg";
+
+  const height: string = "150px";
+</script>
+
 <div>
   <h1>Daniel Grimm</h1>
   <p>
@@ -18,6 +24,7 @@
     Let's continue to push the boundaries of what's possible in technology!
   </p>
   <p>Thank you for visiting!</p>
+  <img src={profile} alt="Profile" {height} />
 </div>
 
 <style>
@@ -25,5 +32,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  img {
+    border-radius: 50%;
   }
 </style>
