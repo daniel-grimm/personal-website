@@ -5,6 +5,7 @@
   import awsCloudPractitioner from "../assets/awscloudpractitioner.png";
   import azureDataFundamentals from "../assets/azuredatafundamentals.png";
   import azureFundamentals from "../assets/azurefundamentals.png";
+  import launchDarklyPlatinum from "../assets/launchdarklyplatinum.png";
 
   const width: string = "150px";
   const height: string = "150px";
@@ -29,6 +30,16 @@
       {height}
     />
   </div>
+  <div class="certification">
+    <h2>Launch Darkly Platinum - Expert</h2>
+    <img
+      src={launchDarklyPlatinum}
+      alt="Azure DevOps Engineer"
+      {width}
+      {height}
+    />
+  </div>
+  
   <div class="certification">
     <h2>Azure Administrator - Associate</h2>
     <img src={azureAdministrator} alt="Azure Administrator" {width} {height} />
